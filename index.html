@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <center>
+            <img src="Logo.png" alt="Institute Logo"><br>
+            <h1>ADMISSION FORM</h1>
+        </center>
+    </header>
+
+    <form action="#" method="post" class="Admission_Form_Information">
+        <label>Form No:</label>
+        <input type="text" name="form-no" required>
+
+        <label>Session:</label>
+        <input type="text" name="session" required>
+
+        <label>Candidate Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Candidate CNIC No:</label>
+        <input type="text" name="CNIC" required>
+
+        <label>Candidate D.O.B:</label>
+        <input type="date" name="DOB" required>
+
+        <label>Religion:</label>
+        <input type="text" name="religion" required>
+
+        <label>Contact No:</label>
+        <input type="text" name="contact-no" required>
+
+        <label>Mobile:</label>
+        <input type="text" name="mobile" required>
+
+        <label>Address:</label>
+        <input type="text" name="Address" required>
+
+        <div class="file-upload-box">
+            <label>Click to Upload Picture</label>
+            <input type="file" name="student-picture" accept="image/*" required>
+        </div>
+
+        <label>Gender:</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="gender" value="Male" onclick="allowOnlyOneCheckbox(this)"> Male</label>
+            <label><input type="checkbox" name="gender" value="Female" onclick="allowOnlyOneCheckbox(this)"> Female</label>
+        </div>
+
+        <label>Department:</label>
+        <select name="department" required>
+            <option value="">Select Department</option>
+            <option>Computer Science</option>
+            <option>Bachelor of Medicine, Bachelor of Surgery</option>
+            <option>Bachelor of Business Administration</option>
+            <option>Information Technology (IT)</option>
+        </select>
+
+        <label>Section:</label>
+        <select name="section" required>
+            <option value="">Select Section</option>
+            <option>Section A - High Achievers</option>
+            <option>Section B - Good Performers</option>
+            <option>Section C - Average Students</option>
+            <option>Section D - Needs Extra Support</option>
+        </select>
+
+        <center>
+            <table>
+                <tr>
+                    <th>Examination</th>
+                    <th>Year</th>
+                    <th>Roll #</th>
+                    <th>Marks</th>
+                    <th>Percentage %</th>
+                    <th>Board/University</th>
+                </tr>
+                <tr>
+                    <td>Matriculation</td>
+                    <td><input type="text" name="matric_year"></td>
+                    <td><input type="text" name="matric_roll"></td>
+                    <td><input type="text" name="matric_marks"></td>
+                    <td><input type="text" name="matric_percentage"></td>
+                    <td><input type="text" name="matric_board"></td>
+                </tr>
+                <tr>
+                    <td>Intermediate</td>
+                    <td><input type="text" name="inter_year"></td>
+                    <td><input type="text" name="inter_roll"></td>
+                    <td><input type="text" name="inter_marks"></td>
+                    <td><input type="text" name="inter_percentage"></td>
+                    <td><input type="text" name="inter_board"></td>
+                </tr>
+            </table>
+        </center>
+
+        <div class="signature-section">
+            <div class="signature-box">Applicant’s Signature</div>
+            <div class="signature-box">Father/Guardian’s Signature</div>
+            <div class="signature-box">Checked By</div>
+            <div class="signature-box">Principal’s Signature</div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
